@@ -14,7 +14,7 @@ def header(current):
     return f'''<header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="SAIL 영남대학교 AI안전연구소 홈">
-      <img class="brand-mark" src="assets/logo.png" alt="SAIL">
+      <img class="brand-mark" src="logo.png" alt="SAIL">
       <span class="brand-text"><span>영남대학교 AI안전연구소</span></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">메뉴</button>
@@ -25,7 +25,7 @@ def header(current):
 FOOTER = '''<footer class="site-footer">
   <div class="wrap">
     <div>
-      <a class="brand" href="index.html"><img class="brand-mark" src="assets/logo.png" alt="SAIL"></a>
+      <a class="brand" href="index.html"><img class="brand-mark" src="logo.png" alt="SAIL"></a>
       <p>영남대학교 AI안전연구소<br>Safety AI Lab (SAIL), Yeungnam University</p>
       <p>(38541) 경상북도 경산시 대학로 280 영남대학교 사회과학관 508호<br>전화 053-810-0000 · sail@yu.ac.kr</p>
     </div>
@@ -49,10 +49,10 @@ FOOTER = '''<footer class="site-footer">
     <p class="copy">© 2026 Safety AI Lab, Yeungnam University. All rights reserved.</p>
   </div>
 </footer>
-<script src="assets/notices.js"></script>
-<script src="assets/members.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/sea.js"></script>'''
+<script src="notices.js"></script>
+<script src="members.js"></script>
+<script src="site.js"></script>
+<script src="sea.js"></script>'''
 
 def page(filename, title, body, desc="영남대학교 AI안전연구소(SAIL)는 AI를 활용한 공공안전과 조직 위험관리 연구를 선도합니다."):
     html = f'''<!doctype html>
@@ -62,8 +62,8 @@ def page(filename, title, body, desc="영남대학교 AI안전연구소(SAIL)는
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 {header(filename)}
